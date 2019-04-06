@@ -13,6 +13,26 @@ body{
     background: linear-gradient(0deg, #000, #262626);
 }
 
+.shadow p {
+    font-family: 'Dancing Script', cursive;
+    color: #6B238E;
+    font-weight: bolder;
+    font-size: 7.21rem;
+    margin: 3%;
+    padding-top: 23%;
+    padding-left: 9%;
+    padding-bottom: 11%;
+}
+
+.shadow p:hover{
+    animation-name: color-glow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    border-bottom: 3px solid;
+    border-radius: 50%
+}
+
 .shadow:before, .shadow:after{
     content: '';
     border-radius: 18px;
@@ -24,7 +44,7 @@ body{
     width: calc(100% + 4px);
     height: calc(100% + 4px);
     z-index: -1;
-    animation: glow 45s linear infinite;
+    animation: glow 40s linear infinite;
 }
 
 .shadow:after{
@@ -41,4 +61,28 @@ body{
     100%{
         background-position: 0 0;
     }
+}
+
+@keyframes color-glow{
+    0% {color: #fb0094;}
+    5% {color: #0000ff;}
+	10% {color: #00ff00;}
+	15% {color: #ffff00;}
+    20% {color: #ff0000;}
+    25% {color: #fb0094;;}
+	30% {color: #0000ff;}
+	35% {color: #00ff00;}
+    40% {color: #ffff00;}
+    45% {color: #ff0000;}
+    50% {color: #fb0094;}
+    55% {color: #0000ff;}
+    60% {color: #00ff00;}
+	65% {color: #ffff00;}
+	70% {color: #ff0000;}
+    75% {color: #fb0094;}
+    80% {color: #0000ff;}
+	85% {color: #00ff00;}
+    90% {color: #ffff00;}
+    95% {color: #ff0000;}
+    100% {color: #fb0094;}
 }
