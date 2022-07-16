@@ -2,6 +2,16 @@ body{
     margin: 0;
     padding: 0;
     background: #000;
+    box-sizing: border-box;
+    
+}
+
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
 }
 
 .shadow{
@@ -11,26 +21,25 @@ body{
     width: 800px;
     height: 500px;
     background: linear-gradient(0deg, #000, #262626);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .shadow p {
     font-family: 'Dancing Script', cursive;
-    color: #6B238E;
+    color: #fff;
     font-weight: bolder;
-    font-size: 7.21rem;
-    margin: 3%;
-    padding-top: 23%;
-    padding-left: 9%;
-    padding-bottom: 11%;
+    font-size: 5rem;
 }
 
 .shadow p:hover{
     animation-name: color-glow;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    cursor: pointer;
-    border-bottom: 3px solid;
-    border-radius: 50%
+    cursor: none;
+    /* border-bottom: 3px solid; */
+    /* border-radius: 50% */
 }
 
 .shadow:before, .shadow:after{
